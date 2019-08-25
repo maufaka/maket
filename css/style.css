@@ -128,6 +128,7 @@ video {
   line-height: 24px;
   width: 563px;
   margin-bottom: 35px;
+  box-sizing: border-box;
 }
 
 .dignity-and-pluses > div:nth-child(2) > details:nth-child(3),
@@ -150,26 +151,10 @@ video {
   position: relative;
 }
 
-/*summary::-webkit-details-marker {
-  display: none
-}
-
-summary:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 10px;
-  left: -35px;
-  background-image: url("../img/layer_2.png");
-  background-color: #445161;
-  outline: 5px solid #445161;
-}*/
-
 summary::-webkit-details-marker {
   display: none
 }
+
 summary:before {
   content: "";
   display: block;
@@ -195,11 +180,16 @@ summary:before {
 
 .scrinshots {
   width: 100%;
-  padding: 50px 50px 20px 50px;
+  padding: 50px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.scrinshots > figure:nth-child(4),
+.scrinshots > figure:nth-child(5) {
+    margin-bottom: 0;
 }
 
 .scrin {
@@ -263,6 +253,7 @@ summary:before {
 .form-title {
   text-align: center;
   padding-top: 50px;
+  margin: 0 0 50px 0;
   color: #ffffff;
   font-family: "Arial";
   font-size: 30px;
