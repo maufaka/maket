@@ -61,11 +61,12 @@ body {
 
 .about-your-product {
     padding: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-product {
     width: 650px;
-    float: left;
 }
 
 .about {
@@ -89,8 +90,6 @@ video {
     background-color: #445161;
     width: 430px;
     height: 245px;
-    float: right;
-    margin-bottom: 50px;
 }
 
 .dignity-and-pluses {
@@ -116,7 +115,6 @@ video {
 
 .dignity-wrapper {
     width: 45%;
-    position: relative;
 }
 
 .pluses-list {
@@ -128,6 +126,7 @@ video {
     width: 563px;
     margin-bottom: 35px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .dignity-and-pluses>div:nth-child(2)>details:nth-child(3),
@@ -270,10 +269,22 @@ summary:before {
 }
 
 .reviews-item {
-    width: 483px;
+    width: 463px;
     height: 121px;
-    margin: 0 0 0 16px;
-    background-image: url("../img/bg_review.png");
+    margin: 0 0 0 25px;
+    background-color: #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+
+.reviews-item:before {
+    content: "";
+    display: block;
+    border: 17px solid transparent;
+    border-right: 15px solid #ccc;
+    position: absolute;
+    top: 14px;
+    left: -27px;
 }
 
 .reviews-txt {
@@ -401,7 +412,6 @@ summary:before {
 }
 
 .footer-head {
-    width: 100%;
     padding: 50px;
     background-image: url("../img/footer.jpg");
     display: flex;
@@ -424,7 +434,6 @@ summary:before {
 
 .footer-form {
     width: 500px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
