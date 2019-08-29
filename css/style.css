@@ -329,21 +329,21 @@ summary:before {
 .buy-wrapper-standart {
     background-color: #445161;
     width: 300px;
-    height: 306px;
+    min-height: 306px;
     border-radius: 10px;
 }
 
 .buy-wrapper-premium {
     background-color: #445161;
     width: 300px;
-    height: 404px;
+    min-height: 404px;
     border-radius: 10px;
 }
 
 .buy-wrapper-lux {
     background-color: #445161;
     width: 300px;
-    height: 499px;
+    min-height: 499px;
     border-radius: 10px;
 }
 
